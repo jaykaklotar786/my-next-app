@@ -13,7 +13,7 @@ function Page() {
         </div>
 
         <div
-          className="bg-white p-6 rounded-xl text-xl font-semibold text-gray-800
+          className="bg-white  text-red-500 p-6 rounded-xl text-xl font-semibold
                        hover:bg-blue-700 hover:scale-105
                       duration-300"
         >
@@ -21,7 +21,7 @@ function Page() {
         </div>
 
         <div
-          className="bg-white p-6 rounded-xl text-xl font-semibold text-gray-800
+          className="bg-white p-6 rounded-xl text-xl font-semibold text-red-500
                         hover:bg-blue-700 hover:scale-105
                        duration-300 "
         >
@@ -29,7 +29,7 @@ function Page() {
         </div>
 
         <div
-          className="bg-white p-6 rounded-xl text-xl font-semibold text-gray-800
+          className="bg-white p-6 rounded-xl text-xl font-semibold text-red-500
                         hover:bg-blue-700 hover:scale-105
                       duration-300 "
         >
@@ -37,7 +37,7 @@ function Page() {
         </div>
 
         <div
-          className="bg-white p-6 rounded-xl text-xl font-semibold text-gray-800
+          className="bg-white p-6 rounded-xl text-xl font-semibold text-red-500
                        hover:bg-blue-700 hover:scale-105
                        duration-300"
         >
@@ -45,7 +45,7 @@ function Page() {
         </div>
 
         <div
-          className="bg-white p-6 rounded-xl text-xl font-semibold text-gray-800
+          className="bg-white p-6 rounded-xl text-xl font-semibold  text-red-500
                        hover:bg-blue-700 hover:scale-105
                        duration-300"
         >
@@ -63,12 +63,15 @@ function Page() {
               height={16}
             />
           </div>
-          <div className=" text-black">
+          <div className="text-red-500">
             <div>Tailwind CSS</div>
             <p>By Jay Kaklotar</p>
           </div>
         </div>
       </div>
+      <button className="bg-sky-500 text-center text-white p-3 text-base rounded-lg  hover:bg-sky-800/80 hover:text-blue-100 duration-300 mt-6 mx-auto block">
+        Buy Now
+      </button>
     </>
   );
 }
