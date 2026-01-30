@@ -73,7 +73,11 @@ function Page() {
         Buy Now
       </button>
 
-      <div className="text-center my-6"></div>
+      <div className="text-center my-6">
+        <p className="text-white md:text-green-50 sm:text-red-600">
+          Lorem, ipsum dolor.
+        </p>
+      </div>
     </>
   );
 }
