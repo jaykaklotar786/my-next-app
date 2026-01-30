@@ -3,7 +3,7 @@ import Image from 'next/image';
 function Page() {
   return (
     <>
-      <div className="max-w-6xl mx-auto p-6 grid gap-10  grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      <div className="max-w-6xl dark:bg-gray-900  mx-auto p-6 grid gap-10  grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         <div
           className="bg-white text-red-500  p-6 rounded-xl text-xl font-semibold 
                      hover:bg-blue-700 hover:scale-105 
@@ -72,6 +72,8 @@ function Page() {
       <button className="bg-sky-500 text-center text-white p-3 text-base rounded-lg  hover:bg-sky-800/80 hover:text-blue-100 duration-300 mt-6 mx-auto block">
         Buy Now
       </button>
+
+      <div className="text-center my-6"></div>
     </>
   );
 }
