@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Page() {
   return (
@@ -69,14 +70,56 @@ function Page() {
           </div>
         </div>
       </div>
-      <button className="bg-sky-500 text-center text-white p-3 text-base rounded-lg  hover:bg-sky-800/80 hover:text-blue-100 duration-300 mt-6 mx-auto block">
+      <button className="bg-sky-500 text-center text-white p-3 text-base rounded-lg  hover:bg-sky-800/80 hover:text-blue-100 duration-300 mt-6 mx-auto block max-w-sm w-full">
         Buy Now
       </button>
 
+      <nav className="flex items-center justify-between p-4 bg-black text-white">
+        <h1 className="text-xl font-bold">MyLogo</h1>
+
+        <ul className="hidden md:flex gap-6">
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+
+        <button className="md:hidden">☰</button>
+      </nav>
+
       <div className="text-center my-6">
         <p className="text-white md:text-green-50 sm:text-red-600">
-          Lorem, ipsum dolor.
+          Lorem, ipsum dolor lo.
         </p>
+      </div>
+      <div className="mt-3">
+        <div className="max-w-sm mx-auto bg-white text-black rounded-xl md:max-w-2xl overflow-hidden ">
+          <div className="md:flex">
+            <div>
+              <img
+                className="h-48 w-full md:h-full md:w-48 object-cover md:h-full md:w-48"
+                src="https://images.pexels.com/photos/34870436/pexels-photo-34870436.jpeg"
+                alt=""
+              />
+            </div>
+            <div className="p-8 ">
+              <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+                An awesome card
+              </div>
+              <Link className="" href="#">
+                Tailwind CSS is amazing once you understand the power of it
+              </Link>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laborum aliquid eligendi animi et quibusdam rerum reiciendis
+                illum consequuntur ipsum tempore?
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row gap-4 bg-gray-200 p-4">
+            <div className="bg-red-400 p-4">Box 1</div>
+            <div className="bg-blue-400 p-4">Box 2</div>
+          </div>
+        </div>
       </div>
     </>
   );
